@@ -1,0 +1,14 @@
+{
+  "name": "fem-js-junior-01-fylo-dark-theme-landing-page",
+  "version": "1.0.0",
+  "description": "Frontend Mentor - Fylo Dark Theme Landing Page",
+  "author": "VIMP",
+  "license": "ISC",
+  "type": "module",
+  "scripts": {
+    "dev": "servor . --reload"
+  },
+  "devDependencies": {
+    "servor": "^4.0.2"
+  }
+}
