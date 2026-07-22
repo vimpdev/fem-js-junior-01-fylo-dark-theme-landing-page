@@ -1,0 +1,49 @@
+@layer tokens {
+
+  :root {
+    /* PRIMITIVE TOKENS */
+    --clr-white: #FFFFFF;
+    --clr-black: #000000;
+    --clr-navy-950: #0B1524;
+    --clr-navy-900: #181F2B;
+    --clr-navy-850: #1B2330;
+    --clr-navy-800: #202A3C;
+    --clr-navy-50: #DFE4F0;
+    --clr-blue-300: #62E0D9;
+    --clr-blue-250: #8ADAE3;
+    --clr-red-500: #FF4242;
+    --clr-gray-400: #C0C0C0;
+
+    --gradient-accent: linear-gradient(-73deg, #63E1D9, #34A0CD);
+
+    --space-0: 0;
+    --space-100: 0.5rem;
+    --space-200: 1rem;
+    --space-300: 1.5rem;
+    --space-400: 2rem;
+    --space-500: 2.5rem;
+    --space-600: 3rem;
+    --space-700: 3.5rem;
+    --space-800: 4rem;
+    --space-900: 4.5rem;
+    --space-1000: 5rem;
+
+    /* SEMANTIC TOKENS */
+    --clr-surface-main: var(--clr-navy-850);
+    --clr-surface-card: var(--clr-navy-800);
+    --clr-surface-footer: var(--clr-navy-950);
+    --clr-surface-inverse: var(--clr-white);
+
+    --clr-text-primary: var(--clr-white);
+    --clr-text-accent: var(--clr-blue-300);
+    --clr-text-error: var(--clr-red-500);
+
+    --ff-primary: 'Open Sans', system-ui, sans-serif;
+    --ff-secondary: Raleway, system-ui, sans-serif;
+
+    --fw-bold: 700;
+    --fw-regular: 400;
+
+    --transition-fast: .25s ease-out;
+  }
+}
