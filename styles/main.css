@@ -47,6 +47,42 @@
     }
   }
 
+  .button {
+    position: relative;
+    isolation: isolate;
+
+    align-self: center;
+    inline-size: 15rem;
+    padding-block: var(--space-200);
+    font-size: clamp(0.875rem, 0.7557rem + 0.5089vw, 1rem);
+    font-weight: var(--fw-bold);
+    background: var(--gradient-accent);
+    border-radius: 99rem;
+    line-height: 1.2;
+
+    @media(width>=48rem) {
+      inline-size: 17.5rem;
+      padding-block: 1.16rem;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-color: var(--clr-surface-hover);
+      border-radius: inherit;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity var(--transition-fast);
+      z-index: -1;
+    }
+
+    &:hover::before {
+      opacity: 1;
+    }
+  }
+
+
   /* HEADER */
   .header {
     padding-block-start: var(--space-300);
@@ -80,6 +116,74 @@
   .header__menu {
     font-size: clamp(0.75rem, 0.5115rem + 1.0178vw, 1rem);
     line-height: 1.2;
+  }
+
+
+  /* INTRO */
+  .intro {
+    margin-block-start: 2.8125rem;
+
+    @media (width >=48rem) {
+      margin-block-start: 6.25rem;
+    }
+
+    @media (width >=64rem) {
+      margin-block-start: var(--space-800);
+    }
+  }
+
+  .intro__inner {
+    --stack-space: var(--space-900);
+
+    inline-size: clamp(20.375rem, 86.8vw, 45.875rem);
+    margin-inline: auto;
+
+    @media (width >=48rem) {
+      --stack-space: var(--space-800);
+    }
+
+    @media (width >=64rem) {
+      --stack-space: var(--space-700);
+    }
+  }
+
+  .intro__content {
+    --stack-space: var(--space-300);
+
+    order: 1;
+    text-align: center;
+
+    h1 {
+      font-size: clamp(1.25rem, 0.0573rem + 5.0891vw, 2.5rem);
+      line-height: 1.2;
+    }
+
+    p {
+      padding-inline: var(--space-200);
+      font-size: clamp(0.875rem, 0.5172rem + 1.5267vw, 1.25rem);
+    }
+
+    @media (width >=48rem) {
+      --stack-space: var(--space-600);
+
+      p {
+        padding-inline: var(--space-300);
+      }
+    }
+
+    @media (width >=64rem) {
+      --stack-space: var(--space-500);
+
+      .button {
+        margin-block-start: calc(-1 * var(--space-100));
+      }
+    }
+  }
+
+  .intro__media {
+    order: 0;
+    align-self: center;
+    inline-size: clamp(19rem, 81vw, 45rem);
   }
 }
 

@@ -14,7 +14,7 @@
     --clr-red-500: #FF4242;
     --clr-gray-400: #C0C0C0;
 
-    --gradient-accent: linear-gradient(-73deg, #63E1D9, #34A0CD);
+    --gradient-accent: linear-gradient(73deg, #63E1D9, #34A0CD);
 
     --space-0: 0;
     --space-100: 0.5rem;
@@ -33,6 +33,7 @@
     --clr-surface-card: var(--clr-navy-800);
     --clr-surface-footer: var(--clr-navy-950);
     --clr-surface-inverse: var(--clr-white);
+    --clr-surface-hover: var(--clr-blue-250);
 
     --clr-text-primary: var(--clr-white);
     --clr-text-accent: var(--clr-blue-300);
